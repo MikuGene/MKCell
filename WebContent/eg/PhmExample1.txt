@@ -1,0 +1,6 @@
+Gene	Sample 1	Sample 2	Sample 3	Sample 4	Sample 5	Sample 6
+CD3D	10	7	13	70	71	90
+CD3G	3	1	10	78	67	64
+CD8A	9	3	6	66	69	99
+CD8B	7	10	14	61	74	80
+CD19	4	6	1	67	70	54

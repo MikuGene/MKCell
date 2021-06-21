@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+body{
+	height: 100vh;
+	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+	overflow: hidden;
+}
+
+.stars{
+	display: none;
+}
+
+.intro{
+    display: table;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+.content {
+	display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.content h1{
+	font-family: Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    background: linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn{
+    display: inline-block;
+    opacity: 0.9;
+    position: relative;
+    height: 55px;
+    width: 160px;
+    line-height: 55px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #DDDDDD;
+    text-decoration: none;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 30px;
+    animation: colscroll 8s linear infinite;
+}
+.btn:hover{
+    opacity: 1;
+}
+.btn:before{
+    position: absolute;
+    content: "";
+    width: 170px;
+    height: 65px;
+    top: -5px;
+    left: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 40px;
+    opacity: 0.4;
+    filter: blur(20px);
+    transition: 0.5s;
+    animation: colscroll 8s linear infinite;
+}
+.btn:hover:before{
+    opacity: 1;
+}
+
+@keyframes Fadeout{
+    0%{
+        opacity: 0.1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes colscroll{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+@keyframes rotate {
+    0% {
+        transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(0);
+    }
+    100% {
+        transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(-360deg);
+    }
+}
+
+@media (min-device-width: 780px){
+.stars {
+	display: block;
+    transform: perspective(500px);
+    transform-style: preserve-3d;
+    position: absolute;
+    bottom: 0;
+    perspective-origin: 50% 100%;
+    left: 50%;
+    animation: rotate 90s infinite linear;
+}
+.star {
+    width: 2px;
+    height: 2px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: 0 0 -300px;
+    transform: translate3d(0, 0, -300px);
+    backface-visibility: hidden;
+}
+}

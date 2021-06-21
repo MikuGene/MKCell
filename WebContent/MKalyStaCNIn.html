@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MKCell Tissue state</title>
+	<link rel="stylesheet" href="css/MKcell.css">
+	<link rel="icon" href="css/logo.gif">
+	<script>var ID = "Null";</script>
+	<script src="js/MKurl.js"></script>
+	<script>var ID = MKurl("Email");</script>
+</head>
+
+<body>
+	
+	<nav class="nav-main">
+		<a class="nav-head">MKCell</a>
+		<button class="nav-tog" data-toggle="collapse" data-target="#MKnav">导航菜单</button>
+		<div class="collapse nav-cont" id="MKnav">
+			<ul class="nav-list nav-right">
+				<li>
+					<script>document.write("<a href='MKhomeCNIn.html?Email="+ID+"'>首页</a>");</script>
+				</li>
+				<li>
+					<script>document.write("<a href='MKPancCNIn.html?Email="+ID+"'>泛癌基因展示</a>");</script>
+				</li>
+				<li class="active">
+					<script>document.write("<a class='triang' href='MKalyCNIn.html?Email="+ID+"'>在线分析<span class='hiden'>(目前)</span></a>");</script>
+					<div class="dropdown-menu">
+					    <script>document.write("<a href='MKalyDCoCNIn.html?Email="+ID+"'>细胞组分估测</a>");</script>
+						<script>document.write("<a href='MKalyScpCNIn.html?Email="+ID+"'>细胞类型识别</a>");</script>
+						<script>document.write("<a href='MKalyCNIn.html?Email="+ID+"'>自定义分析区</a>");</script>
+					</div>
+				</li>
+				<li>
+				    <script>document.write("<a href='MKdwlCNIn.html?Email="+ID+"'>下载专区</a>");</script>
+				</li>
+				<li>
+				    <script>document.write("<a href='MKhelpCNIn.html?Email="+ID+"'>帮助</a>");</script>
+				</li>
+			</ul>
+			<ul class="nav-list">
+				<li>
+					<script>document.write("<a href='MKhomeENIn.html?Email="+ID+"'>English site</a>");
+					</script>
+				</li>
+				<li class="active"><a>您好！ <script>document.write(ID);</script></a></li>
+				<li><a href="MKhomeCN.html">登出</a></li>
+			</ul> 
+		</div>
+	</nav>
+	
+	<div class="adapt">
+		<div class="exhibit row">
+			<div class="panel tell">
+				<h2><strong>MKCell 组织状态估测</strong></h2>
+				<br>
+				<h3>您好，请上传您的基因测序表达矩阵: (.txt or .csv)</h3>
+				<form action="MK-stateCN" method="post" enctype="multipart/form-data">
+					<input class="right" type="file" name="upload">
+				<p class="right">**您的文件格式:&nbsp;&nbsp;
+					.txt<input type="radio" name="Fty" value="txt" checked= "checked">
+					.csv<input type="radio" name="Fty" value="csv">
+				</p>
+				<p class="right">**结果归一化:&nbsp;&nbsp;
+					是<input type="radio" name="Scale" value="1" checked= "checked">
+					否<input type="radio" name="Scale" value="2">
+				</p>
+				<input class="btn btn-red right" type="submit" value="提交"><br><br>
+				<p class="right"><a class="btn btn-md btn-inf" href="MKStateCNIn.jsp" target="_blank">上次运行历史纪录</a></p>
+				</form>
+				<br>
+				<div class="dwl-text">
+				<h3 class="tell">示例文件：</h3>
+				<p class="right">
+					<a href="eg/RNAseqExample.txt" target="_blank" download="MKState.txt">MKState.txt</a>;
+				</p>
+				</div>
+			</div>
+			<div class="panel">
+				<br>
+				<h3>**方法引用文献： <br>Huating Yuan, Min Yan, Guanxiong Zhang, Wei Liu, Chunyu Deng, Gaoming Liao, Liwen Xu, Tao Luo, Haoteng Yan, Zhilin Long, Aiai Shi, Tingting Zhao, Yun Xiao, Xia Li, CancerSEA: a cancer single-cell state atlas, Nucleic Acids Research, Volume 47, Issue D1, 08 January 2019, Pages D900–D908.</h3>
+				<br>
+				<h3>示例图片：</h3>
+				<img class="img-sm" src="eg/MKState.png" width="600px" alt="MKState" />
+			</div>
+		</div>
+	</div>
+	
+		<footer class="text-center"><p>Copyright © <i>MikuGene Biotechnology Co., LTD</i>. All rights reserved.</p></footer>
+	
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap-4.3.1.js"></script>
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+<script>
+    L2Dwidget.init({
+        "model": {
+            jsonPath: "https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",
+            "scale": 1},
+        "display": {
+            "position": "right",
+            "width": 80,
+            "height": 160,
+            "hOffset": 0,
+            "vOffset": -20},
+        "mobile": {
+            "show": true,
+		    "scale":0.5},
+        "react": {
+            "opacityDefault": 0.9,
+            "opacityOnHover": 0.2}});
+</script>
+</html>

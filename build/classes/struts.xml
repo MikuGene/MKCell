@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+<constant name="struts.multipart.maxSize" value="21474836480"></constant>
+    <package name="MK-struts-phm" extends="struts-default" namespace="/" >
+        <action class="com.MK.action.MKphm" method="MKupphm" name="MK-phm">
+            <result name="input">/error.jsp</result>
+            <result name="MKrephm">/MKPhmENIn.jsp</result>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+        <action class="com.MK.action.MKphmCN" method="MKupphmCN" name="MK-phmCN">
+            <result name="input">/error.jsp</result>
+            <result name="MKrephmCN">/MKPhmCNIn.jsp</result>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+        <action class="com.MK.action.MKcor" method="MKupcor" name="MK-cor">
+            <result name="input">/error.jsp</result>
+            <result name="MKrecor">/MKCorENIn.jsp</result>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+        <action class="com.MK.action.MKcorCN" method="MKupcorCN" name="MK-corCN">
+            <result name="input">/error.jsp</result>
+            <result name="MKrecorCN">/MKCorCNIn.jsp</result>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+        <action class="com.MK.action.MKde" method="MKupde" name="MK-de">
+            <result name="input">/error.jsp</result>
+            <result name="MKrede">/MKDeENIn.jsp</result>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+        <action class="com.MK.action.MKdeCN" method="MKupdeCN" name="MK-deCN">
+            <result name="input">/error.jsp</result>
+            <result name="MKredeCN">/MKDeCNIn.jsp</result>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+        <action class="com.MK.action.MKuclust" method="MKupclt" name="MK-uclt">
+            <result name="input">/error.jsp</result>
+            <result name="MKreclt">/MKCltENIn.jsp</result>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+        <action class="com.MK.action.MKuclustCN" method="MKupcltCN" name="MK-ucltCN">
+            <result name="input">/error.jsp</result>
+            <result name="MKrecltCN">/MKCltCNIn.jsp</result>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+        <action class="com.MK.action.MKscp" method="MKupscp" name="MK-scp">
+            <result name="input">/error.jsp</result>
+            <result name="MKrescp">/MKscpENIn.jsp</result>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+        <action class="com.MK.action.MKscpCN" method="MKupscpCN" name="MK-scpCN">
+            <result name="input">/error.jsp</result>
+            <result name="MKrescpCN">/MKscpCNIn.jsp</result>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+        <action class="com.MK.action.MKscRNA" method="MKupscRNA" name="MK-scRNA">
+            <result name="input">/error.jsp</result>
+            <result name="MKrescRNA">/MKScRNAENIn.jsp</result>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+        <action class="com.MK.action.MKscRNACN" method="MKupscRNACN" name="MK-scRNACN">
+            <result name="input">/error.jsp</result>
+            <result name="MKrescRNACN">/MKScRNACNIn.jsp</result>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+        <action class="com.MK.action.MKcell" method="MKupcell" name="MK-cell">
+            <result name="input">/error.jsp</result>
+            <result name="MKrecell">/MKCellENIn.jsp</result>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+        <action class="com.MK.action.MKcellCN" method="MKupcellCN" name="MK-cellCN">
+            <result name="input">/error.jsp</result>
+            <result name="MKrecellCN">/MKCellCNIn.jsp</result>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+                <action class="com.MK.action.MKstate" method="MKupstate" name="MK-state">
+            <result name="input">/error.jsp</result>
+            <result name="MKrestate">/MKStateENIn.jsp</result>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+        <action class="com.MK.action.MKstateCN" method="MKupstateCN" name="MK-stateCN">
+            <result name="input">/error.jsp</result>
+            <result name="MKrestateCN">/MKStateCNIn.jsp</result>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+        <action class="com.MK.action.MKvirus" method="MKupvirus" name="MK-virus">
+            <result name="input">/error.jsp</result>
+            <result name="MKrevirus">/MKVirusENIn.jsp</result>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+        <action class="com.MK.action.MKvirusCN" method="MKupvirusCN" name="MK-virusCN">
+            <result name="input">/error.jsp</result>
+            <result name="MKrevirusCN">/MKVirusCNIn.jsp</result>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>
+    </package>
+</struts>

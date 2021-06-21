@@ -1,0 +1,10 @@
+Gene	Sample 1	Sample 2	Sample 3	Sample 4	Sample 5	Sample 6	Sample 7	Sample 8	Sample 9	Sample 10	Sample 11	Sample 12
+CXCL13	1	3	3	4	5	6	7	8	9	10	10	12
+FOXP3	12	10	10	9	8	7	6	5	4	3	3	1
+CDKN2A	2	4	6	8	10	11	14	16	18	20	21	24
+RPL23	24	21	20	18	16	14	11	10	8	6	4	2
+CD19	1	4	9	16	25	36	49	64	81	100	120	145
+MS4A1	4	5	6	8	8	8	9	9	9	10	12	13
+MALAT1	1	1	2	2	1	1	2	2	1	3	1	1
+RPL34	2	2	4	6	2	2	50	7	2	9	2	2
+GAPDH	6	6	7	6	5	3	4	6	6	6	5	6

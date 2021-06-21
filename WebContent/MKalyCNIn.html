@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MKCell Analysis</title>
+	<link rel="stylesheet" href="css/MKcell.css">
+    <link rel="icon" href="css/logo.gif">
+	<script>var ID = "Null";</script>
+	<script src="js/MKurl.js"></script>
+	<script>var ID = MKurl("Email");</script>
+</head>
+
+<body>
+	
+	<nav class="nav-main">
+		<a class="nav-head">MKCell</a>
+		<button class="nav-tog" data-toggle="collapse" data-target="#MKnav">导航菜单</button>
+		<div class="collapse nav-cont" id="MKnav">
+			<ul class="nav-list nav-right">
+				<li>
+					<script>document.write("<a href='MKhomeCNIn.html?Email="+ID+"'>首页</a>");</script>
+				</li>
+				<li>
+					<script>document.write("<a href='MKPancCNIn.html?Email="+ID+"'>泛癌基因展示</a>");</script>
+				</li>
+				<li class="active">
+					<script>document.write("<a class='triang' href='MKalyCNIn.html?Email="+ID+"'>在线分析<span class='hiden'>(目前)</span></a>");</script>
+					<div class="dropdown-menu">
+					    <script>document.write("<a href='MKalyDCoCNIn.html?Email="+ID+"'>细胞组分估测</a>");</script>
+						<script>document.write("<a href='MKalyScpCNIn.html?Email="+ID+"'>细胞类型识别</a>");</script>
+						<script>document.write("<a href='MKalyCNIn.html?Email="+ID+"'>自定义分析区</a>");</script>
+					</div>
+					
+				</li>
+				<li>
+                    <script>document.write("<a href='MKdwlCNIn.html?Email="+ID+"'>下载专区</a>");</script>
+				</li>
+				<li>
+				    <script>document.write("<a href='MKhelpCNIn.html?Email="+ID+"'>帮助</a>");</script>
+				</li>
+			</ul>
+			<ul class="nav-list">
+				<li>
+					<script>document.write("<a href='MKhomeENIn.html?Email="+ID+"'>English site</a>");
+					</script>
+				</li>
+				<li class="active"><a>您好！ <script>document.write(ID);</script></a></li>
+				<li><a href="MKhomeCN.html">登出</a></li>
+			</ul> 
+		</div>
+	</nav>
+	
+	<div class="adapt">
+		<div class="exhibit row">
+			<div class="panel tell">
+			<h2><strong>MKCell 在线分析区</strong></h2>
+			<br>
+			<h3><strong>&nbsp;常规测序数据（Bulk）:</strong></h3>
+			<h4>&nbsp;&nbsp;
+				<script>document.write("<a class='btn btn-md btn-red' href='MKalyDCoCNIn.html?Email="+ID+"'>-- 细胞组分评估 --</a>");</script>
+				<a class="tra-lg color-red"></a>
+				<p class="showin">** MKCell 可估测您上传的常规（bulk）测序数据中26种细胞类型浸润分数或组成比例。**</p>
+			</h4>
+			<h4>&nbsp;&nbsp;
+				<script>document.write("<a class='btn btn-md btn-red' href='MKalyStaCNIn.html?Email="+ID+"'>-- 组织状态评估 --</a>");</script>
+				<a class="tra-lg color-red"></a>
+				<p class="showin">** MKCell 可估测您上传的常规（bulk）测序数据中14种样本组织状态评分。**</p>
+			</h4>
+			<h4>&nbsp;&nbsp;
+				<script>document.write("<a class='btn btn-md btn-red' href='MKalyVirCNIn.html?Email="+ID+"'>-- 病毒序列比对 --</a>");</script>
+				<a class="tra-lg color-red"></a>
+				<p class="showin">** MKCell 可估测您上传的普通（bulk）测序数据中病毒的种类与含量。**</p>
+			</h4>
+			<br>  
+			<h3><strong>&nbsp;单细胞测序数据（ScRNA）:</strong></h3>
+			<h4>&nbsp;&nbsp;
+				<script>document.write("<a class='btn btn-md btn-warn' href='MKalyScpCNIn.html?Email="+ID+"'>-- 单细胞聚类识别 --</a>");</script>
+			    <a class="tra-lg color-warn"></a>
+				<p class="showin">** MKCell 可聚类并识别您上传的单细胞（scRNA）测序数据中的细胞亚群类型。**</p>
+			</h4>
+			<h4>&nbsp;&nbsp;
+				<script>document.write("<a class='btn btn-md btn-warn' href='MKalyScpCNIn.html?Email="+ID+"'>-- 单细胞状态评估 --</a>");</script>
+			    <a class="tra-lg color-warn"></a>
+				<p class="showin">** MKCell 可计算您上传的单细胞（scRNA）测序数据中的各细胞对应的细胞状态。**</p>
+			</h4>
+			<h4>&nbsp;&nbsp;
+				<script>document.write("<a class='btn btn-md btn-warn' href='MKalyScpCNIn.html?Email="+ID+"'>-- 空间转录组测序 --</a>");</script>
+			    <a class="tra-lg color-warn"></a>
+				<p class="showin">** MKCell 可聚类并识别您上传的空间转录组测序数据中的细胞亚群类型，并映射到组织切片的物理位置。**</p>
+			</h4>
+			<br>  
+			<h3><strong>&nbsp;自定义分析区:</strong></h3>
+			<h4 class="bottom">&nbsp;&nbsp;
+				<script>document.write("<a class='btn btn-md btn-inf' href='MKalyDeCNIn.html?Email="+ID+"'>-- 差异基因识别 --</a>");</script>
+			    <a class="tra-lg color-inf"></a>
+				<p class="showin">** MKCell 可识别您上传的两组基因表达谱中差异表达的基因。**</p>
+			</h4>
+			<h4 class="bottom">&nbsp;&nbsp;
+				<script>document.write("<a class='btn btn-md btn-inf' href='MKalyCorCNIn.html?Email="+ID+"'>-- 相关性分析 --</a>");</script>
+			    <a class="tra-lg color-inf"></a>
+				<p class="showin">** MKCell 可分别计算您上传的两组基因表达谱中基因表达趋势间的相关性。**</p>
+		    </h4>
+			<h4 class="bottom">&nbsp;&nbsp; 
+			    <script>document.write("<a class='btn btn-md btn-inf' href='MKalyCltCNIn.html?Email="+ID+"'>-- 无监督聚类 --</a>");</script>
+				<a class="tra-lg color-inf"></a>
+				<p class="showin">** MKCell 可对您上传的多组基因表达谱中的样本进行无监督聚类。 **</p>
+			</h4>
+			<h4 class="bottom">&nbsp;&nbsp; 
+			    <script>document.write("<a class='btn btn-md btn-inf' href='MKalyCltCNIn.html?Email="+ID+"'>-- 共表达网络 --</a>");</script>
+				<a class="tra-lg color-inf"></a>
+				<p class="showin">** MKCell 可聚类并识别您上传的空间转录组测序数据中的细胞亚群类型，并映射到组织切片的物理位置。**</p>
+			</h4>
+			<h4 class="bottom">&nbsp;&nbsp;
+				<script>document.write("<a class='btn btn-md btn-inf' href='MKalyPhmCNIn.html?Email="+ID+"'>-- 热图绘制 --</a>");</script>
+			    <a class="tra-lg color-inf"></a>
+				<p class="showin">** MKCell 可绘制您上传的测序表达谱的基因表达热图。**</p>
+			</h4>
+			<h4 class="bottom">&nbsp;&nbsp;
+				<script>document.write("<a class='btn btn-md btn-inf' href='MKalyPhmCNIn.html?Email="+ID+"'>-- 矩阵处理 --</a>");</script>
+			    <a class="tra-lg color-inf"></a>
+				<p class="showin">** MKCell 可对矩阵进行多种常用的处理加工。**</p>
+			</h4>
+			<br>
+		</div>
+	</div>
+			<p class="card half-card color-orag">** 所有的分析都会在服务器后台进行。在您上传文件后，关闭页面不会影响分析进程。
+			您可以点击分析页面上的历史纪录按钮查看最近一次的运行结果。**</p>
+	</div>
+		<footer class="text-center"><p>Copyright © <i>MikuGene Biotechnology Co., LTD</i>. All rights reserved.</p></footer>
+	
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap-4.3.1.js"></script>
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+<script>
+    L2Dwidget.init({
+        "model": {
+            jsonPath: "https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",
+            "scale": 1},
+        "display": {
+            "position": "right",
+            "width": 80,
+            "height": 160,
+            "hOffset": 0,
+            "vOffset": -20},
+        "mobile": {
+            "show": true,
+		    "scale":0.5},
+        "react": {
+            "opacityDefault": 0.9,
+            "opacityOnHover": 0.2}});
+</script>
+</html>

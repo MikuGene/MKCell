@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MKCell Home</title>
+	<link rel="stylesheet" href="css/MKcell.css">
+	<link rel="icon" href="css/logo.gif">
+	<script>var ID = "Null";</script>
+	<script src="js/MKurl.js"></script>
+	<script>var ID = MKurl("Email");</script>
+</head>
+
+<body>
+
+	<nav class="nav-main">
+		<a class="nav-head">MKCell</a>
+		<button class="nav-tog" data-toggle="collapse" data-target="#MKnav">Menu</button>
+		<div class="collapse nav-cont" id="MKnav">
+			<ul class="nav-list nav-right">
+				<li class="active">
+					<script>document.write("<a href='MKhomeENIn.html?Email="+ID+"'>Home<span class='hiden'>(current)</span></a>");</script>
+				</li>
+				<li>
+					<script>document.write("<a href='MKPancENIn.html?Email="+ID+"'>Pan-cancer View</a>");</script>
+				</li>
+				<li>
+					<script>document.write("<a class='triang' href='MKalyENIn.html?Email="+ID+"'>Analysis</a>");</script>
+					<div class="dropdown-menu">
+					    <script>document.write("<a href='MKalyDCoENIn.html?Email="+ID+"'>Cell composition</a>");</script>
+						<script>document.write("<a href='MKalyScpENIn.html?Email="+ID+"'>Cell recognition</a>");</script>
+						<script>document.write("<a href='MKalyENIn.html?Email="+ID+"'>Custom analysis</a>");</script>
+					</div>
+				</li>
+				<li>
+				    <script>document.write("<a href='MKdwlENIn.html?Email="+ID+"'>Download</a>");</script>
+				</li>
+				<li>
+				    <script>document.write("<a href='MKhelpENIn.html?Email="+ID+"'>Help</a>");</script>
+				</li>
+			</ul>
+			<ul class="nav-list">
+				<li>
+					<script>document.write("<a href='MKhomeCNIn.html?Email="+ID+"'>中文站点</a>");
+					</script>
+				</li>
+				<li class="active"><a>Hello! <script>document.write(ID);</script></a></li>
+				<li><a href="MKhomeEN.html">Log Out</a></li>
+			</ul> 
+		</div>
+	</nav>
+
+	<div class="adapt">
+		<div class="exhibit">
+			<h1 class="text-center"><strong>MKCell</strong>:&nbsp; <em>Cell milk shake</em> &nbsp;exploration.</h1>
+			<div class="row">
+				<div class="col-auto">
+					<p>
+			<script>document.write("<a href='MKalyENIn.html?Email="+ID+"' class='btn btn-lg btn-green' role='button'>Analysis</a>");
+			</script>
+					</p>
+				</div>
+				<div class="col-auto">
+					<p>
+			<script>document.write("<a href='MKPancENIn.html?Email="+ID+"' class='btn btn-lg btn-blue' role='button'>Gene view</a>");
+			</script>
+					</p>
+				</div>
+			</div>
+			<p class="text-center mark">MKCell serves as an analytical tool to identify cell types or cell components and their expression profiles in single-cell or bulk RNA-seq, respectively.</p>
+		</div>
+	</div>
+	
+	<div class="adapt row">
+		<div class="text-center col-md panel">
+			<h2>MKCell R package</h2>
+			<p class="tell">On July xx, 2020 - we officially updated the MikuCell CRAN repository to release 1.0 !</p>
+			<a class="btn btn-md btn-red" href="https://github.com/MikuGene" target="_blank" role="button">Github Go</a>
+		</div>
+
+		<div class="text-center col-md panel">
+			<h2>MKCell tutorial</h2>
+			<p class="tell">The detailed tutorials for using the MKCell analysis platform can be viewed on the help page.</p>
+			<a class="btn btn-md btn-inf" href="https://github.com/MikuGene" target="_blank" role="button">Tutorial</a>
+		</div>
+	</div>
+	
+	<hr>
+	<div class="adapt row">
+		<div class="col-sm">
+			<h2><span class="icon icon-pen"></span> Cell composition</h2>
+			<p>MKCell allows to estimate the cell composition when you upload bulk RNA-seq data.</p>
+		</div>
+		<div class="col-sm">
+			<h2><span class="icon icon-pen"></span> Cell recognition</h2>
+			<p>MKCell allows to identify known cell phenotype when you upload single cell RNA-seq data.</p>
+		</div>
+		<div class="col-sm">
+			<h2><span class="icon icon-pen"></span> Pan-cancer view</h2>
+			<p>MKCell allows to view Pan-cancer data which has been analyzed, from TCGA, GEO, HCA, ect.</p>
+		</div>
+		<div class="col-sm">
+			<h2><span class="icon icon-pen"></span> Custom analysis</h2>
+			<p>MKCell allows to download data and provides some online-tools for custom analysis.</p>
+		</div>
+	</div>
+	<hr>
+	
+	<div class="adapt row">
+		<div class="card">
+			<h3>Please Feedback</h3>
+			<p>If there are any unexpected errors on our website, or you have any suggestions, please give us feedback !</p>
+			<hr>
+			<a class="btn btn-green" href="#" target="_blank" role="button">Feedback</a>
+		</div>
+		<div class="card">
+			<h3>MKCell Group</h3>
+			<p>We sincerely hope that you could be interested in joining our research group, we welcome you !</p>
+			<hr>
+			<a class="btn btn-green" href="#" target="_blank" role="button">Contact us</a>
+		</div>
+	</div>
+	
+	<h2 class="adapt">Function Table</h2>
+	<hr>
+	<div class="adapt row">
+		<div class="panel panel-green">
+			<div class="panel-head panel-head-green">
+				<h3>For bulk RNA-seq</h3>
+			</div>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>The main function</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr><th scope="row">1. Deconvolution</th></tr>
+					<tr><th scope="row">2. Comparison</th></tr>
+					<tr><th scope="row">3. Correlation</th></tr>
+					<tr>
+						<th scope="row"><p class="text-center">
+							<script>document.write("<a href='MKalyENIn.html?Email="+ID+"' class='btn btn-green' role='button'>Analysis</a>");
+							</script>
+							</p>
+						</th>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<div class="panel panel-warn">
+			<div class="panel-head panel-head-warn">
+				<h3>For scRNA-seq</h3>
+			</div>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>The main function</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr><th scope="row">1. Clustering</th></tr>
+					<tr><th scope="row">2. Pseudotime</th></tr>
+					<tr><th scope="row">3. FindMarkers</th></tr>
+					<tr>
+						<th scope="row"><p class="text-center">
+							<script>document.write("<a href='MKalyENIn.html?Email="+ID+"' class='btn btn-warn' role='button'>Analysis</a>");
+							</script>
+							</p>
+						</th>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+		
+		<div class="panel panel-info">
+			<div class="panel-head panel-head-info">
+				<h3>For custom analysis</h3>
+			</div>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>The main function</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr><th scope="row">1. Gene heatmap</th></tr>
+					<tr><th scope="row">2. PCA, ICA, tSNE</th></tr>
+					<tr><th scope="row">3. Batch remove</th></tr>
+					<tr>
+						<th scope="row"><p class="text-center">
+							<script>document.write("<a href='MKalyENIn.html?Email="+ID+"' class='btn btn-inf' role='button'>Analysis</a>");
+							</script>
+							</p>
+						</th>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<div class="panel panel-red">
+			<div class="panel-head panel-head-red">
+				<h3>For download</h3>
+			</div>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>The main data</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr><th scope="row">1. ScRNA feature-plot</th></tr>
+					<tr><th scope="row">2. ScRNA expression data</th></tr>
+					<tr><th scope="row">3. Tools for local analysis</th></tr>
+					<tr>
+						<th scope="row"><p class="text-center">
+							<script>document.write("<a href='MKalyENIn.html?Email="+ID+"' class='btn btn-red' role='button'>Download</a>");
+							</script>
+							</p>
+						</th>
+					</tr>
+				</tbody>
+			</table>
+		</div>	
+	</div>
+	<hr>
+	
+	<div class="adapt row">
+		<div class="panel">
+			<h2>Contact Us:</h2>
+			<address>
+				<strong>Harbin Medical University</strong><br>
+				<strong>Harbin China</strong><br>
+				&nbsp;CodeNight<br>
+				&nbsp;Email: <i>2743623823@qq.com</i><br>
+				&nbsp;Lanlan Wei<br>
+				&nbsp;Email: <i>weilanlan_1119@163.com</i>
+			</address>
+		</div>
+		<hr>
+		<div class="panel">
+			<h2>Announcement:</h2>
+			<h3>Announcement 1</h3>
+			<p>Some tools are still being perpared.</p>
+			<h3>Announcement 2</h3>
+			<p>The website has no commercial purpose.</p>
+		</div>
+		<hr>
+		<div class="panel">
+			<h2>About Us:</h2>
+			<p>**This website does not store any original data uploaded by users.**</ p>
+			<p>For detail please wait...</p>
+		</div>
+	</div>
+	<hr>
+	
+	<footer class="text-center"><p>Copyright © <i>MikuGene Biotechnology Co., LTD</i>. All rights reserved.</p></footer>
+	
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap-4.3.1.js"></script>
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+<script>
+    L2Dwidget.init({
+        "model": {
+            jsonPath: "https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",
+            "scale": 1},
+        "display": {
+            "position": "right",
+            "width": 80,
+            "height": 160,
+            "hOffset": 0,
+            "vOffset": -20},
+        "mobile": {
+            "show": true,
+		    "scale":0.5},
+        "react": {
+            "opacityDefault": 0.9,
+            "opacityOnHover": 0.2}});
+</script>
+</html>
